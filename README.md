@@ -1,3 +1,18 @@
+## Table of content
+- [6 kyu](#6-kyu)
+    - [Bit counting](#bit-counting)
+        - [Links](#links)
+        - [Explanation](#explanation)
+    - [Lottery ticket](#lottery-ticket)
+        - [Links](#links)
+        - [Explanation](#explanation)
+        - [Notes](#notes)
+    - [Levenshtein distance](#levenshtein-distance)
+- [Misc](#misc)
+    - [My own TOC (Table of Contents)](#my-own-toc-(table-of-contents))
+        - [Usage](#usage)
+        - [References](#references)
+
 ## 6 kyu
 
 ### Bit counting
@@ -56,3 +71,31 @@ size_t countBits(unsigned n)
 #### Notes
 
 Have some problemas with this kata, it seems it has some bugs in the tests.
+
+### Levenshtein distance
+
+> TODO
+
+https://www.codewars.com/kata/545cdb4f61778e52810003a2/train/c
+
+## Misc
+
+### My own TOC (Table of Contents)
+
+#### Usage
+
+```bash
+gcc -o toc -lcurl toc.c && chmod +x toc && ./toc
+```
+
+#### References
+
+- https://conclase.net/c/librerias/stdio/ftell
+- https://cdiv.sourceforge.net/cdivhlp/const_SEEK.htm
+- https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/fgetc-fgetwc?view=msvc-170
+- https://www.ibm.com/docs/es/i/7.5?topic=functions-strcat-concatenate-strings
+- https://www.ibm.com/docs/es/i/7.5?topic=functions-fprintf-write-formatted-data-stream
+- [Repeating a character in printf](https://stackoverflow.com/a/16299867)
+- [asnprintf](https://stackoverflow.com/a/23842944)
+- [Curl escape url util](https://curl.se/libcurl/c/curl_easy_escape.html)
+ýÿÿÿ

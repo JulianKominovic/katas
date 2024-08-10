@@ -78,7 +78,7 @@ int main(int argc, char const *argv[])
                         c++;
                     }
 
-                    if (asprintf(&formatted_item, "%*s- [%s](#%s)\n", title_hierarchy * SPACES - SPACES - max_hierarchy * SPACES, "", title_buff, sanitized_title) < 0)
+                    if (asprintf(&formatted_item, "%*s- [%s](#%s)\n", (title_hierarchy - 1) * SPACES, "", title_buff, sanitized_title) < 0)
                         die("Ooops asnprintf didn't work");
 
                     strcat(toc, formatted_item);
@@ -96,18 +96,20 @@ int main(int argc, char const *argv[])
     fflush(stdin);
     char user_decision = 'n';
     scanf("%c", &user_decision);
+    // move cursor to begin of readme
+    fseek(fptr, 0, SEEK_SET);
+    fread(buff, sizeof(char), file_len, fptr);
+    fseek(fptr, 0, SEEK_SET);
+    // set null terminator
+    buff[file_len] = '\0';
     if (user_decision == 'y')
     {
-        // move cursor to begin of readme
-        fseek(fptr, 0, SEEK_SET);
-        fread(buff, sizeof(char), file_len, fptr);
-        fseek(fptr, 0, SEEK_SET);
 
         char *new_content;
-
-        if (asprintf(&new_content, "## Table of content\n%s\n%s", toc, buff) < 0)
+        if (asprintf(&new_content, "# Table of content\n%s\n%s\n", toc, buff) < 0)
             die("Ooops asnprintf didn't work when prepending toc to readme");
         fprintf(fptr, "%s\n", new_content);
+
         free(new_content);
         printf("🎉 Done!");
     }

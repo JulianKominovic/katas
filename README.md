@@ -1,3 +1,19 @@
+# Table of content
+- [Codewars](#codewars)
+    - [6 kyu](#6-kyu)
+        - [Bit counting](#bit-counting)
+            - [Links](#links)
+            - [Explanation](#explanation)
+        - [Lottery ticket](#lottery-ticket)
+            - [Links](#links)
+            - [Explanation](#explanation)
+            - [Notes](#notes)
+        - [Levenshtein distance](#levenshtein-distance)
+- [Misc](#misc)
+    - [My own TOC (Table of Contents)](#my-own-toc-(table-of-contents))
+        - [Usage](#usage)
+        - [References](#references)
+
 # Codewars
 
 ## 6 kyu
@@ -85,3 +101,5 @@ gcc -o toc -lcurl toc.c && chmod +x toc && ./toc
 - [Repeating a character in printf](https://stackoverflow.com/a/16299867)
 - [asnprintf](https://stackoverflow.com/a/23842944)
 - [Curl escape url util](https://curl.se/libcurl/c/curl_easy_escape.html)
+
+

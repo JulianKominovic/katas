@@ -1,17 +1,4 @@
-## Table of content
-- [6 kyu](#6-kyu)
-    - [Bit counting](#bit-counting)
-        - [Links](#links)
-        - [Explanation](#explanation)
-    - [Lottery ticket](#lottery-ticket)
-        - [Links](#links)
-        - [Explanation](#explanation)
-        - [Notes](#notes)
-    - [Levenshtein distance](#levenshtein-distance)
-- [Misc](#misc)
-    - [My own TOC (Table of Contents)](#my-own-toc-(table-of-contents))
-        - [Usage](#usage)
-        - [References](#references)
+# Codewars
 
 ## 6 kyu
 
@@ -78,17 +65,17 @@ Have some problemas with this kata, it seems it has some bugs in the tests.
 
 https://www.codewars.com/kata/545cdb4f61778e52810003a2/train/c
 
-## Misc
+# Misc
 
-### My own TOC (Table of Contents)
+## My own TOC (Table of Contents)
 
-#### Usage
+### Usage
 
 ```bash
 gcc -o toc -lcurl toc.c && chmod +x toc && ./toc
 ```
 
-#### References
+### References
 
 - https://conclase.net/c/librerias/stdio/ftell
 - https://cdiv.sourceforge.net/cdivhlp/const_SEEK.htm
@@ -98,4 +85,3 @@ gcc -o toc -lcurl toc.c && chmod +x toc && ./toc
 - [Repeating a character in printf](https://stackoverflow.com/a/16299867)
 - [asnprintf](https://stackoverflow.com/a/23842944)
 - [Curl escape url util](https://curl.se/libcurl/c/curl_easy_escape.html)
-ýÿÿÿ
